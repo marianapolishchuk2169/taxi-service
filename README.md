@@ -39,9 +39,55 @@ The service has convenient navigation between pages.
 - Deploy the generated WAR file to servlet container (this project used Tomcat)
 - After deploying the project, open the [link](http://localhost:8080) in your web browser to access the taxi service.
 
+## Structure
 
+- Controller:
+   - Authentication controllers:
+      - LoginController - to login
+      - LogoutController - to logout
+   - Car controllers:
+      - AddCarController - to create new car 
+      - AddDriverToCarController - to add driver to the car
+      - DeleteCarController - to delete car
+      - GetAllCarsController - to display all cars
+   - Driver controllers:
+      - AddDriverController - to register driver
+      - DeleteDriverController - to delete driver
+      - GetAllDriversController - to display all drivers
+      - GetMyCurrentCarsController - to display cars on current account
+   - Manufacturer controllers:
+      - AddManufacturerController - to add new manufacturer
+      - DeleteManufacturerController - to delete manufacturer
+      - GetAllManufacturersController - to display all manufacturers
+   - IndexController - homepage
+- Dao:
+   - CarDaoImpl - processes car model from DB
+   - DriverDaoImpl - processes driver model from DB
+   - ManufacturerDaoImpl - processes manufacturer model from DB
+- Exception: 
+   - AuthenticationException 
+   - DataProcessingException
+- Model:
+   - Car - car model class
+   - Driver - driver model class
+   - Manufacturer - manufacturer model class
+- Service:
+   - AuthenticationServiceImpl - processes authentication logic
+   - CarServiceImpl - processes car's CRUD logic
+   - DriverServiceImpl - processes driver's CRUD logic
+   - ManufacturerServiceImpl - processes manufacturer's CRUD logic
+- Util:
+   - ConnectionUtil - provides a connection to the database
+- Resources:
+   - init_db.sql - sql script to initialize the database
+- Webapp:
+   - jsp files
+   - css file 
+   - web.xml - configuration file
+- Docs:
+   - images - images of service pages
 ## How does it look
 
-![img.png](img.png)
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![img.png](docs/images/login_page.png)
+![img_1.png](docs/images/homepage.png)
+![img_2.png](docs/images/drivers_page.png)
