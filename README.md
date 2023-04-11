@@ -1,4 +1,4 @@
-# [](https://cdn-icons-png.flaticon.com/512/3485/3485591.png)Taxi-service
+# ![](https://cdn-icons-png.flaticon.com/32/3485/3485591.png) Taxi-service ![](https://cdn-icons-png.flaticon.com/32/3485/3485591.png)
 
 It's an educational project that reflects the work of a taxi service.
 The user can add a new driver, 
